@@ -1,0 +1,151 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+/* VARIABLES */
+:root {
+  --color-brand: #37806b;
+  --color-brand-light: #caa892;
+  --color-body: #212121;
+  --color-body-light: #646464;
+  --font-display: "Poppins", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+  --shadow: 0px 4px 4px rgba(0, 0, 0, 0.025);
+  --transition: all 0.5s ease;
+}
+
+/* RESETS */
+body {
+  background-color: white;
+  font-size: 18px;
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-body-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: 600 !important;
+  line-height: 1.4;
+  color: var(--color-body);
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: var(--font-body);
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-body-light);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-brand);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-brand-light);
+}
+
+img {
+  max-width: 100%;
+}
+
+/* HELPERS */
+.section-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* BTN */
+.btn {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 0px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-width: 1px;
+  padding: 8px 20px;
+}
+
+.btn-brand {
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+  color: white;
+}
+
+.btn-brand:hover {
+  background-color: var(--color-brand-light);
+  border-color: var(--color-brand-light);
+  color: white;
+  box-shadow: var(--shadow);
+}
+
+/* NAVBAR */
+.navbar-brand img {
+  height: 40px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--font-body);
+  color: var(--color-body);
+  transition: var(--transition);
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--color-brand);
+}
+
+.navbar {
+  padding-top: 24px;
+  transition: var(--transition);
+}
+
+.navbar.scrolled {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.navbar-toggler {
+  border-radius: 0;
+  border-color: var(--color-brand-light);
+  color: var(--color-brand);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: white;
+    padding-bottom: 24px;
+  }
+
+  .navbar-collapse .navbar-nav {
+    padding-top: 24px;
+  }
+}
+
+/* HERO */
+#hero .container {
+  min-height: 100vh;
+}
