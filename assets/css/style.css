@@ -63,8 +63,8 @@ img {
 
 /* HELPERS */
 .section-padding {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /* BTN */
@@ -93,13 +93,19 @@ img {
   box-shadow: var(--shadow);
 }
 
+@media (max-width: 576px) {
+  .btn {
+    width: 100%;
+  }
+}
+
 /* NAVBAR */
 .navbar-brand img {
   height: 40px;
 }
 
 .navbar-nav .nav-link {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   font-family: var(--font-body);
   color: var(--color-body);
@@ -146,6 +152,3 @@ img {
 }
 
 /* HERO */
-#hero .container {
-  min-height: 100vh;
-}
